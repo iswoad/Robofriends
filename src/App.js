@@ -19,8 +19,7 @@ onSearchChange = (event) => {
 	render() {
 		const self = this;
 		const filteredRobots = this.state.robots.filter(robot=>{
-			return robots.name.toLowerCase().includes(self.state.searchfield.toLowerCase());
-		console.log(this.state.searchfield)
+			return robot.name.toLowerCase().includes(self.state.searchfield.toLowerCase());
 		})
 		return(
 			<div className='tc'>
